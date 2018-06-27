@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce-application",
+  "version": "1.0.0",
+  "description": "This is a simple ecommerce application made by js families",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mridul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
