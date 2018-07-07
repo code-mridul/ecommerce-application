@@ -11,6 +11,7 @@ var MongoStore = require('connect-mongo')(session);
 var passport = require('passport');
 
 
+
 var secret = require('./config/secret');
 var User = require('./models/user');
 var Category = require('./models/category');
@@ -61,13 +62,13 @@ app.set('view engine', 'ejs');
 var mainRoutes = require('./routes/main');
 var userRoutes = require('./routes/user');
 var adminRoutes = require('./routes/admin');
-
+var apiRoutes = require('./api/api.js');
 
 
 app.use(mainRoutes);
 app.use(userRoutes);
 app.use(adminRoutes);
-
+app.use('/api', apiRoutes);
 
 
 app.listen(secret.port, function(err) {
